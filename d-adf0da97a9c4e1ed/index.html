@@ -1,0 +1,94 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>adris.tech - for Garden Silk Fashions</title><meta name="robots" content="noindex"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet"><style>
+:root{--paper:#FFFFFF;--ink:#0E0E0C;--muted:#6B6B69;--line:#E0E0DE;--accent:#7C5CFF;--soft:#F5F5F5}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#1C1C1A}
+body{font-family:'Space Grotesk',ui-sans-serif,system-ui,sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased}
+.deck{display:flex;flex-direction:column;align-items:center;gap:16px;padding:16px 0}
+.slide{width:1280px;height:720px;background:var(--paper);position:relative;overflow:hidden;padding:76px 72px 70px;
+  display:flex;flex-direction:column;justify-content:center;box-shadow:0 10px 40px rgba(0,0,0,.35);page-break-after:always;break-after:page}
+.top{position:absolute;top:28px;left:72px;right:72px;display:flex;justify-content:space-between;font-size:13px;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.top b{color:var(--ink);font-weight:600}
+.foot{position:absolute;bottom:26px;left:72px;right:72px;display:flex;justify-content:space-between;font-size:12px;color:var(--muted)}
+.kicker{font-size:14px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:600;margin:0 0 14px}
+h1,h2{font-family:'Instrument Serif',Georgia,serif;font-weight:400;letter-spacing:-.01em}
+h2{font-size:60px;line-height:1.04;max-width:1060px}
+h2 em{font-style:italic;color:var(--accent)}
+.lead{font-size:21px;line-height:1.45;color:var(--muted);max-width:860px;margin-top:18px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:52px}
+.card{border-top:2px solid var(--ink);padding-top:18px}
+.card .n{font-family:'Instrument Serif',Georgia,serif;font-size:50px;color:var(--accent);line-height:1}
+.card h3{font-size:25px;margin:12px 0 10px;font-weight:600;letter-spacing:-.01em}
+.card p{font-size:19px;line-height:1.5;color:#2B2B27}
+.cover{background:var(--ink);color:var(--paper)}
+.cover .top,.cover .foot{color:#A8A6A1}.cover .top b{color:var(--paper)}
+.cover h1{font-size:108px;line-height:.95;max-width:1100px}
+.cover h1 em{color:var(--accent);font-style:italic}
+.cover .rule{width:120px;height:4px;background:var(--accent);margin:36px 0 22px}
+.cover .meta{font-size:20px;color:#F2EFE9;line-height:1.5}
+.team{display:grid;grid-template-columns:1.1fr 1fr;gap:64px;margin-top:64px;align-items:center}
+.person{display:flex;gap:26px;align-items:center}
+.avatar{width:132px;height:132px;border-radius:50%;background:var(--ink);color:var(--paper);display:flex;align-items:center;
+  justify-content:center;font-family:'Instrument Serif',Georgia,serif;font-size:58px;flex:none;overflow:hidden}
+.avatar img{width:100%;height:100%;object-fit:cover}
+.person h3{font-size:34px;font-weight:600;letter-spacing:-.02em}.person p{font-size:18px;color:var(--muted);margin-top:6px;line-height:1.45}
+.stat{border-left:2px solid var(--line);padding-left:26px}
+.stat .big{font-family:'Instrument Serif',Georgia,serif;font-size:76px;line-height:1;color:var(--accent)}
+.stat p{font-size:18px;line-height:1.45;margin-top:8px}
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:56px;position:relative}
+.step{padding:0 26px 0 0;position:relative}
+.step .dot{width:54px;height:54px;border-radius:50%;border:2px solid var(--ink);display:flex;align-items:center;
+  justify-content:center;font-weight:600;font-size:20px;background:var(--paper);position:relative;z-index:1}
+.step.on .dot{background:var(--accent);border-color:var(--accent);color:#fff}
+.flow:before{content:"";position:absolute;top:27px;left:27px;right:60px;height:2px;background:var(--ink)}
+.step h3{font-size:24px;margin:24px 0 10px;font-weight:600}.step p{font-size:18px;line-height:1.45;color:#2B2B27}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.chip{border:1.5px solid var(--ink);border-radius:999px;padding:9px 18px;font-size:17px;font-weight:500}
+.chip.a{background:var(--ink);color:var(--paper)}
+.nums{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:52px}
+.num{background:var(--soft);padding:32px 30px 28px}
+.num .v{font-family:'Instrument Serif',Georgia,serif;font-size:54px;line-height:1.02}
+.num .l{font-size:17px;color:var(--muted);margin-top:10px;line-height:1.4}
+.note{font-size:14px;color:var(--muted);margin-top:20px;line-height:1.5;max-width:1080px}
+table.cmp{width:100%;border-collapse:collapse;margin-top:44px;font-size:19px}
+.cmp th,.cmp td{padding:15px 16px;text-align:left;border-bottom:1px solid var(--line)}
+.cmp th{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.cmp tr.us td{background:var(--ink);color:var(--paper);font-weight:600}
+.cmp td.y{color:#0E0E0C;font-weight:600}.cmp tr.us td.y{color:#C9BDFF}.cmp td.p{color:#6B6B69}.cmp td.no{color:#a33}
+.market{margin-top:30px;display:grid;grid-template-columns:1fr;gap:10px}
+.market .ml{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.market .rv{display:flex;gap:12px;flex-wrap:wrap}
+.rival{border:1.5px solid var(--ink);padding:10px 16px;display:flex;flex-direction:column;min-width:170px}
+.rival b{font-size:18px;font-weight:600}.rival span{font-size:13px;color:var(--muted)}
+.rival.you{background:var(--ink);color:var(--paper)}.rival.you span{color:var(--accent)}
+.market .mt{font-size:16px;color:#2B2B27;line-height:1.45;max-width:980px}
+.market + table.cmp{margin-top:22px;font-size:16px}.market + table.cmp th,.market + table.cmp td{padding:10px 14px}
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:52px}
+.end{background:var(--accent);color:#fff}
+.end .top,.end .foot{color:rgba(255,255,255,.75)}.end .top b{color:#fff}
+.end h2{font-size:88px;max-width:1100px}.end .lead{color:rgba(255,255,255,.9)}
+.end .cta{display:flex;gap:44px;margin-top:40px;font-size:20px}.end .cta b{display:block;font-size:13px;letter-spacing:.16em;
+  text-transform:uppercase;opacity:.75;margin-bottom:6px;font-weight:600}
+.end a{color:#fff}
+@media print{html,body{background:var(--paper)}.deck{padding:0;gap:0}.slide{box-shadow:none}}
+@page{size:1280px 720px;margin:0}
+@media (max-width:1300px){.deck{zoom:calc(100vw / 1340px)}}
+
+.plan h2.pt{font-size:50px;line-height:1.1;letter-spacing:-.02em;margin-bottom:28px;max-width:1040px}
+.plan .pbody{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:center;gap:16px}
+.plan .ptext{font-size:36px;line-height:1.3;max-width:1000px}
+.plan ul.pl{list-style:none;display:grid;gap:12px}
+.plan ul.pl li{font-size:33px;line-height:1.3;padding:0 0 12px 26px;border-bottom:1px solid var(--line);position:relative}
+.plan ul.pl li:before{content:"";position:absolute;left:0;top:13px;width:11px;height:11px;border-radius:50%;background:var(--pa)}
+.plan .pgrid{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:26px}
+.plan .pcard{border-top:5px solid var(--pa);background:#fff;padding:24px;border-radius:8px}
+.plan .pcard b{display:block;font-size:31px;margin-bottom:12px}
+.plan .pcard span{font-size:25px;line-height:1.35;color:var(--muted)}
+.plan .pstat b{font-size:64px;color:var(--pa);letter-spacing:-.02em}
+.plan ol.ps{list-style:none;counter-reset:s;display:grid;gap:14px}
+.plan ol.ps li{counter-increment:s;font-size:32px;line-height:1.3;display:flex;gap:18px;align-items:baseline}
+.plan ol.ps li:before{content:counter(s);flex:none;width:44px;height:44px;line-height:44px;text-align:center;border-radius:50%;background:var(--pa);color:#fff;font-weight:700;font-size:22px}
+.plan .pcard ul{list-style:none;display:grid;gap:10px;font-size:25px;color:var(--muted)}
+.plan .pcover h1{font-size:70px}
+.plan .pcover em{color:var(--pa);font-style:normal}
+:root{--pa:#7C5CFF}</style></head><body><div class="deck"><section class="slide plan cover" data-note=""><div class="top"><span><b>adris.tech</b></span><span>For Garden Silk Fashions · 01 / 9</span></div><div class="pcover"><h1>An AI office<br>for <em>Garden Silk Fashions</em>.</h1></div><div class="foot"><span>Prepared for Garden Silk Fashions Private Limited · 2 November 2026</span><span>Private - made for Garden Silk Fashions only</span></div></section><section class="slide plan " data-note="Every handoff and report draft adds hours to turnaround."><div class="top"><span><b>adris.tech</b></span><span>For Garden Silk Fashions · 02 / 9</span></div><h2 class="pt">Manual work slows your lab</h2><div class="pbody"><p class="ptext">Manual processes slow lab turnaround</p></div><div class="foot"><span>Prepared for Garden Silk Fashions Private Limited · 2 November 2026</span><span>Private - made for Garden Silk Fashions only</span></div></section><section class="slide plan " data-note="Three common bottlenecks that delay results and raise risk."><div class="top"><span><b>adris.tech</b></span><span>For Garden Silk Fashions · 03 / 9</span></div><h2 class="pt">Where time disappears</h2><div class="pbody"><ul class="pl"><li>Sample tracking errors — misplaced samples during handoffs</li><li>Report generation bottlenecks — hours formatting instead of analyzing</li><li>Compliance documentation gaps — missed regulatory updates</li></ul></div><div class="foot"><span>Prepared for Garden Silk Fashions Private Limited · 2 November 2026</span><span>Private - made for Garden Silk Fashions only</span></div></section><section class="slide plan " data-note="Agents run on your computers and handle routine steps end to end."><div class="top"><span><b>adris.tech</b></span><span>For Garden Silk Fashions · 04 / 9</span></div><h2 class="pt">AI agents automate lab workflows</h2><div class="pbody"><p class="ptext">AI agents automate lab workflows</p></div><div class="foot"><span>Prepared for Garden Silk Fashions Private Limited · 2 November 2026</span><span>Private - made for Garden Silk Fashions only</span></div></section><section class="slide plan " data-note="Each agent targets a specific bottleneck."><div class="top"><span><b>adris.tech</b></span><span>For Garden Silk Fashions · 05 / 9</span></div><h2 class="pt">Problems met with agents</h2><div class="pbody"><div class="pgrid"><div class="pcard"><b>Sample tracking errors</b><span>Sample intake agent logs each handoff and alerts on delays</span></div><div class="pcard"><b>Report generation bottlenecks</b><span>Report drafting agent pulls data into templates for owner review</span></div><div class="pcard"><b>Compliance documentation gaps</b><span>Compliance monitoring agent watches updates and flags required changes</span></div></div></div><div class="foot"><span>Prepared for Garden Silk Fashions Private Limited · 2 November 2026</span><span>Private - made for Garden Silk Fashions only</span></div></section><section class="slide plan " data-note="Three agents that plug into existing lab systems."><div class="top"><span><b>adris.tech</b></span><span>For Garden Silk Fashions · 06 / 9</span></div><h2 class="pt">Your new digital teammates</h2><div class="pbody"><ul class="pl"><li>Sample intake agent</li><li>Report drafting agent</li><li>Compliance monitoring agent</li></ul></div><div class="foot"><span>Prepared for Garden Silk Fashions Private Limited · 2 November 2026</span><span>Private - made for Garden Silk Fashions only</span></div></section><section class="slide plan " data-note="Typical labs reclaim 8 to 14 hours of skilled time."><div class="top"><span><b>adris.tech</b></span><span>For Garden Silk Fashions · 07 / 9</span></div><h2 class="pt">Hours returned each week</h2><div class="pbody"><div class="pgrid"><div class="pcard pstat"><b>8–14</b><span>hours saved per week</span></div></div></div><div class="foot"><span>Prepared for Garden Silk Fashions Private Limited · 2 November 2026</span><span>Private - made for Garden Silk Fashions only</span></div></section><section class="slide plan " data-note="Buyers compare suppliers faster; the lab that delivers the right document first gets the contract."><div class="top"><span><b>adris.tech</b></span><span>For Garden Silk Fashions · 08 / 9</span></div><h2 class="pt">First reply wins the order</h2><div class="pbody"><p class="ptext">Buyers in your field compare suppliers faster than before; the one who replies first, with the right document, gets the order.</p></div><div class="foot"><span>Prepared for Garden Silk Fashions Private Limited · 2 November 2026</span><span>Private - made for Garden Silk Fashions only</span></div></section><section class="slide plan " data-note=""><div class="top"><span><b>adris.tech</b></span><span>For Garden Silk Fashions · 09 / 9</span></div><h2 class="pt">Tell us what you need.</h2><div class="pbody"><p class="ptext">Choose the agents that fit. (Prices are discussed based on what you choose.)</p><p class="ptext">Amogh Misra · https://www.adris.tech</p></div><div class="foot"><span>Prepared for Garden Silk Fashions Private Limited · 2 November 2026</span><span>Private - made for Garden Silk Fashions only</span></div></section></div></body></html>
