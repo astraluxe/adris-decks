@@ -1,0 +1,76 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex, nofollow"><title>SKULL.ORG - for Wockhardt Hospitals</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet"><style>
+:root{--paper:#FFFFFF;--ink:#0E0E0C;--muted:#6B6B69;--line:#E0E0DE;--accent:#7C5CFF;--soft:#F5F5F5}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#1C1C1A}
+body{font-family:'Space Grotesk',ui-sans-serif,system-ui,sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased}
+.deck{display:flex;flex-direction:column;align-items:center;gap:16px;padding:16px 0}
+.slide{width:1280px;height:720px;background:var(--paper);position:relative;overflow:hidden;padding:76px 72px 70px;
+  display:flex;flex-direction:column;justify-content:center;box-shadow:0 10px 40px rgba(0,0,0,.35);page-break-after:always;break-after:page}
+.top{position:absolute;top:28px;left:72px;right:72px;display:flex;justify-content:space-between;font-size:13px;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.top b{color:var(--ink);font-weight:600}
+.foot{position:absolute;bottom:26px;left:72px;right:72px;display:flex;justify-content:space-between;font-size:12px;color:var(--muted)}
+.kicker{font-size:14px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:600;margin:0 0 14px}
+h1,h2{font-family:'Instrument Serif',Georgia,serif;font-weight:400;letter-spacing:-.01em}
+h2{font-size:60px;line-height:1.04;max-width:1060px}
+h2 em{font-style:italic;color:var(--accent)}
+.lead{font-size:21px;line-height:1.45;color:var(--muted);max-width:860px;margin-top:18px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:52px}
+.card{border-top:2px solid var(--ink);padding-top:18px}
+.card .n{font-family:'Instrument Serif',Georgia,serif;font-size:50px;color:var(--accent);line-height:1}
+.card h3{font-size:25px;margin:12px 0 10px;font-weight:600;letter-spacing:-.01em}
+.card p{font-size:19px;line-height:1.5;color:#2B2B27}
+.cover{background:var(--ink);color:var(--paper)}
+.cover .top,.cover .foot{color:#A8A6A1}.cover .top b{color:var(--paper)}
+.cover h1{font-size:108px;line-height:.95;max-width:1100px}
+.cover h1 em{color:var(--accent);font-style:italic}
+.cover .rule{width:120px;height:4px;background:var(--accent);margin:36px 0 22px}
+.cover .meta{font-size:20px;color:#F2EFE9;line-height:1.5}
+.team{display:grid;grid-template-columns:1.1fr 1fr;gap:64px;margin-top:64px;align-items:center}
+.person{display:flex;gap:26px;align-items:center}
+.avatar{width:132px;height:132px;border-radius:50%;background:var(--ink);color:var(--paper);display:flex;align-items:center;
+  justify-content:center;font-family:'Instrument Serif',Georgia,serif;font-size:58px;flex:none;overflow:hidden}
+.avatar img{width:100%;height:100%;object-fit:cover}
+.person h3{font-size:34px;font-weight:600;letter-spacing:-.02em}.person p{font-size:18px;color:var(--muted);margin-top:6px;line-height:1.45}
+.stat{border-left:2px solid var(--line);padding-left:26px}
+.stat .big{font-family:'Instrument Serif',Georgia,serif;font-size:76px;line-height:1;color:var(--accent)}
+.stat p{font-size:18px;line-height:1.45;margin-top:8px}
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:56px;position:relative}
+.step{padding:0 26px 0 0;position:relative}
+.step .dot{width:54px;height:54px;border-radius:50%;border:2px solid var(--ink);display:flex;align-items:center;
+  justify-content:center;font-weight:600;font-size:20px;background:var(--paper);position:relative;z-index:1}
+.step.on .dot{background:var(--accent);border-color:var(--accent);color:#fff}
+.flow:before{content:"";position:absolute;top:27px;left:27px;right:60px;height:2px;background:var(--ink)}
+.step h3{font-size:24px;margin:24px 0 10px;font-weight:600}.step p{font-size:18px;line-height:1.45;color:#2B2B27}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.chip{border:1.5px solid var(--ink);border-radius:999px;padding:9px 18px;font-size:17px;font-weight:500}
+.chip.a{background:var(--ink);color:var(--paper)}
+.nums{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:52px}
+.num{background:var(--soft);padding:32px 30px 28px}
+.num .v{font-family:'Instrument Serif',Georgia,serif;font-size:54px;line-height:1.02}
+.num .l{font-size:17px;color:var(--muted);margin-top:10px;line-height:1.4}
+.note{font-size:14px;color:var(--muted);margin-top:20px;line-height:1.5;max-width:1080px}
+table.cmp{width:100%;border-collapse:collapse;margin-top:44px;font-size:19px}
+.cmp th,.cmp td{padding:15px 16px;text-align:left;border-bottom:1px solid var(--line)}
+.cmp th{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.cmp tr.us td{background:var(--ink);color:var(--paper);font-weight:600}
+.cmp td.y{color:#0E0E0C;font-weight:600}.cmp tr.us td.y{color:#C9BDFF}.cmp td.p{color:#6B6B69}.cmp td.no{color:#a33}
+.market{margin-top:30px;display:grid;grid-template-columns:1fr;gap:10px}
+.market .ml{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.market .rv{display:flex;gap:12px;flex-wrap:wrap}
+.rival{border:1.5px solid var(--ink);padding:10px 16px;display:flex;flex-direction:column;min-width:170px}
+.rival b{font-size:18px;font-weight:600}.rival span{font-size:13px;color:var(--muted)}
+.rival.you{background:var(--ink);color:var(--paper)}.rival.you span{color:var(--accent)}
+.market .mt{font-size:16px;color:#2B2B27;line-height:1.45;max-width:980px}
+.market + table.cmp{margin-top:22px;font-size:16px}.market + table.cmp th,.market + table.cmp td{padding:10px 14px}
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:52px}
+.end{background:var(--accent);color:#fff}
+.end .top,.end .foot{color:rgba(255,255,255,.75)}.end .top b{color:#fff}
+.end h2{font-size:88px;max-width:1100px}.end .lead{color:rgba(255,255,255,.9)}
+.end .cta{display:flex;gap:44px;margin-top:40px;font-size:20px}.end .cta b{display:block;font-size:13px;letter-spacing:.16em;
+  text-transform:uppercase;opacity:.75;margin-bottom:6px;font-weight:600}
+.end a{color:#fff}
+@media print{html,body{background:var(--paper)}.deck{padding:0;gap:0}.slide{box-shadow:none}}
+@page{size:1280px 720px;margin:0}
+@media (max-width:1300px){.deck{zoom:calc(100vw / 1340px)}}
+</style></head><body><main class="deck"><section class="slide cover" data-note="Thank them for their time; this is about their files, not about us."><div class="top"><span><b>SKULL.ORG</b> · adris.tech</span><span>For Wockhardt Hospitals · 01 / 8</span></div><h1>Sensitive files, locked.<br>For <em>Wockhardt Hospitals</em>.</h1><div class="rule"></div><p class="meta">This deck was made for you, about the patient reports, scans and billing files your teams work with every day.<br>Eight slides, about two minutes.</p><div class="foot"><span>Prepared for Wockhardt Hospitals Limited · 24 November 2026</span><span>Private - made for Wockhardt Hospitals only</span></div></section><section class="slide " data-note="Small team, open code - say both plainly."><div class="top"><span><b>SKULL.ORG</b> · adris.tech</span><span>For Wockhardt Hospitals · 02 / 8</span></div><div class="kicker">Who we are</div><h2>SKULL.ORG is the security lab of <em>adris.tech</em>.</h2><p class="lead">A Bengaluru team that builds open-source tools to keep sensitive files safe. Everything we ship can be read line by line before you install it.</p><div class="foot"><span>Prepared for Wockhardt Hospitals Limited · 24 November 2026</span><span>Private - made for Wockhardt Hospitals only</span></div></section><section class="slide " data-note="Ask which of the three worries them most."><div class="top"><span><b>SKULL.ORG</b> · adris.tech</span><span>For Wockhardt Hospitals · 03 / 8</span></div><div class="kicker">The risk</div><h2>Sensitive patient data moves unsafely across systems</h2><p class="lead">What we usually see - tell us where we are wrong.</p><div class="grid3"><div class="card"><div class="n">01</div><h3>Unencrypted patient files shared</h3><p>Patient records often move via email or shared drives without encryption, risking exposure.</p></div><div class="card"><div class="n">02</div><h3>DPDP compliance gaps persist</h3><p>Hospitals usually lack a clear view of sensitive file flows required by DPDP Act.</p></div><div class="card"><div class="n">03</div><h3>Insider access to records</h3><p>Staff often retain unnecessary access to patient data after role changes, increasing breach risk.</p></div></div><div class="foot"><span>Prepared for Wockhardt Hospitals Limited · 24 November 2026</span><span>Private - made for Wockhardt Hospitals only</span></div></section><section class="slide " data-note="Each answer matches one risk on the slide before."><div class="top"><span><b>SKULL.ORG</b> · adris.tech</span><span>For Wockhardt Hospitals · 04 / 8</span></div><div class="kicker">What we do</div><h2>Secure file handling and compliance visibility</h2><div class="grid3"><div class="card"><div class="n">01</div><h3>File locker for patient data</h3><p>Lock files with password via right-click using libsodium; original kept until unlocked copy verified.</p></div><div class="card"><div class="n">02</div><h3>DPDP file flow audit</h3><p>Check how sensitive files move between people, email, shared drives; receive short report of fixes.</p></div><div class="card"><div class="n">03</div><h3>Team trial with recovery key</h3><p>Free one-month trial for one team; optional recovery key ensures controlled access.</p></div></div><div class="foot"><span>Prepared for Wockhardt Hospitals Limited · 24 November 2026</span><span>Private - made for Wockhardt Hospitals only</span></div></section><section class="slide " data-note="Offer to show it live on the call."><div class="top"><span><b>SKULL.ORG</b> · adris.tech</span><span>For Wockhardt Hospitals · 05 / 8</span></div><div class="kicker">skull-locker</div><h2>Right-click, type the password twice, done.</h2><div class="grid3"><div class="card"><h3>Proven cryptography only</h3><p>libsodium (Argon2id and XChaCha20-Poly1305). Nothing home-made.</p></div><div class="card"><h3>Nothing is lost</h3><p>The original is kept until the locked copy has been unlocked and checked. A recovery key is offered.</p></div><div class="card"><h3>Open source</h3><p>Your IT team can read every line first: github.com/skull-org/skull-locker</p></div></div><div class="foot"><span>Prepared for Wockhardt Hospitals Limited · 24 November 2026</span><span>Private - made for Wockhardt Hospitals only</span></div></section><section class="slide " data-note="The trial is free; a price comes only if they continue."><div class="top"><span><b>SKULL.ORG</b> · adris.tech</span><span>For Wockhardt Hospitals · 06 / 8</span></div><div class="kicker">The free month</div><h2>One team, one month, no cost.</h2><div class="flow"><div class="step on"><div class="dot">1</div><h3>Set up</h3><p>We set up skull-locker for one team you choose.</p></div><div class="step"><div class="dot">2</div><h3>Check</h3><p>We look at how sensitive files move between your people, email and shared drives.</p></div><div class="step"><div class="dot">3</div><h3>Report</h3><p>A short report: what to fix first under the DPDP Act.</p></div><div class="step"><div class="dot">4</div><h3>Decide</h3><p>After the month you decide whether to continue on a paid plan.</p></div></div><div class="foot"><span>Prepared for Wockhardt Hospitals Limited · 24 November 2026</span><span>Private - made for Wockhardt Hospitals only</span></div></section><section class="slide " data-note="Close with their field&#x27;s reason."><div class="top"><span><b>SKULL.ORG</b> · adris.tech</span><span>For Wockhardt Hospitals · 07 / 8</span></div><div class="kicker">Why now</div><h2>Protecting personal data is now a legal duty.</h2><div class="why"><div class="card"><h3>The DPDP Act</h3><p>India&#39;s data protection law asks every firm that holds personal data to protect it with reasonable security safeguards.</p></div><div class="card"><h3>Your field</h3><p>Indian hospital chains face new DPDP Act enforcement; securing patient data flow is urgent.</p></div><div class="card"><h3>Start small</h3><p>One team first. Nothing you use today is replaced.</p></div></div><div class="foot"><span>Prepared for Wockhardt Hospitals Limited · 24 November 2026</span><span>Private - made for Wockhardt Hospitals only</span></div></section><section class="slide end" data-note="Ask for the call to plan the trial."><div class="top"><span><b>SKULL.ORG</b> · adris.tech</span><span>For Wockhardt Hospitals · 08 / 8</span></div><h2>A short meeting<br>to plan the trial.</h2><p class="lead">Tell us which team handles the most sensitive files at Wockhardt Hospitals, and we set the month up around them.</p><div class="cta"><div><b>Reply</b>just answer our email</div><div><b>Read the code</b><a href="https://github.com/skull-org/skull-locker">github.com/skull-org/skull-locker</a></div><div><b>See us</b><a href="https://www.adris.tech">www.adris.tech</a></div></div><div class="foot"><span>Prepared for Wockhardt Hospitals Limited · 24 November 2026</span><span>Private - made for Wockhardt Hospitals only</span></div></section></main></body></html>
